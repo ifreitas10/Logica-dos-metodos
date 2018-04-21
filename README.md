@@ -1,23 +1,38 @@
-public class aulaAtividades{
-            public static void main(String[] args){
-                int[] idades = new int[3];
-                String[] nomes = new String[3];
-                int idade = 0;
-                int idadeMaior = 0;
-                String nomeIdadeMaior = "";
-                for (int i = 0; i<=2; i++) {
-                    nomes[i] = JOptionPane.showInputDialog("Digite o seu nome");
-                    idades[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite sua idade"));
-                    idade = idades[i];
-                    /*if (nomes[i] == "fim"){
-                        break;
-                    }*/
-                    if (idade > idadeMaior){
-                        idadeMaior= idade;
-                        nomeIdadeMaior = nomes[i];
-                    } else{
-                      }
-                }
-                System.out.println("Pessoa com a maior idade\nNome: "+nomeIdadeMaior+" Idade: "+idadeMaior);
-            }
-        }
+MÉTODO
+	ASSINATURA (public void calcula(int num1))
+		tipo do método (public)
+		void (não devolve resulta - sem retorno)
+		calcula (nome do método - assinatura)
+		int (tipo do valor que vão te passar - número)
+		num1 (nome da variável - onde o número vai ser salvo - para ser usado em baixo)
+
+Declarar um método - 5 coisas
+
+ASSINATURA
+
+IMPLEMENTAÇÃO
+	{
+	num 1 * 10
+	}
+
+RETORNO
+	return
+	(void - sem retorno)
+
+
+public void calcula (int num1) {
+
+	var resultado = num1 * 10;
+	System.out.println (resultado);
+}
+
+public int calcula(int num1) {
+	var resultado = num1 * 10;
+	return resultado;
+}
+
+public double calcula(int num1) {
+	return num1 * 10;
+}
+
+resultado = calcula(1);
